@@ -46,7 +46,9 @@ body {
 
 header {
     height: 17%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
@@ -120,7 +122,8 @@ h1 {
 
 .info-text {
     font-size: 1.8rem;
-    width: 50%;
+    max-width: 24em;
+    min-width: 14em;
     padding: 1.25em;
     margin-left: 3.125em;
 }
@@ -183,4 +186,8 @@ footer p {
 .foot-img:hover {
     background-color: #FFFCF7;
     border: 2px solid #FFFCF7;
+}
+
+@media (max-width: 600px) {
+
 }
