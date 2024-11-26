@@ -17,8 +17,10 @@
 /* Animation */
 
 @keyframes portrait-color {
-    from {border-color: #00F5D4;}
-  to {border-color: #FEE440;}
+    from {border-color: #00F5D4;
+    border-width: 5px;}
+  to {border-color: #FEE440;
+border-width: 30px;}
 }
 
 /* General Styling */
@@ -159,7 +161,6 @@ footer p {
 }
 
 #portrait:hover {
-    width: 301px;
     animation: portrait-color 2s linear infinite;
     
 }
