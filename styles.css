@@ -29,11 +29,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Structure */
 
 body {
-    height: 100vh;
+    
     background: linear-gradient(#d397fa,  #8364e8);
     font-family: 'londrina_solidregular', Tahoma, sans-serif;
 }
@@ -44,8 +48,7 @@ header {
 }
 
 nav {
-    width: 20%;
-    border: 2px solid yellow;
+    width: 17%;
 }
 
 #navbar {
@@ -55,9 +58,33 @@ nav {
 
 main {
     width: 83%;
-    border: 2px solid red;
 }
 
+#portrait-section {
+    padding: 30px;
+}
+
+#about {
+    margin: 50px 0;
+}
+
+#arrow-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 10%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
 
 
 /* Typography */
@@ -85,6 +112,19 @@ h1 {
     font-family: 'membraregular', Tahoma, sans-serif;
     font-weight: normal;
     font-size: 2.2rem;
+    margin-left: 40px;
+    font-size: 3rem;
+}
+
+.info-text {
+    font-size: 1.8rem;
+    width: 50%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+footer p {
+    font-size: 1.2rem;
 }
 
 /* Links */
@@ -104,6 +144,10 @@ h1 {
     cursor: pointer;
 }
 
+
+
+
+
 /* Images */
 
 #portrait {
@@ -115,7 +159,27 @@ h1 {
 }
 
 #portrait:hover {
-    width: 315px;
-    animation: portrait-color 2.5s linear infinite;
+    width: 301px;
+    animation: portrait-color 2s linear infinite;
     
+}
+
+#up-arrow {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+#up-arrow:hover {
+    border: 2px solid #FFFCF7;
+}
+
+.foot-img {
+    width: 2rem;
+    border-radius: 25%;
+    margin: 0 10px;
+}
+
+.foot-img:hover {
+    background-color: #FFFCF7;
+    border: 2px solid #FFFCF7;
 }

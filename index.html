@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <h1>Theodore Oliver</h1>
+            <h1 id="heading">Theodore Oliver</h1>
             <p id="header-caption">Front End Developer | Software Engineer</p>
         </header>
         <div id="content-container">
@@ -16,18 +16,37 @@
                 <ul id="navbar">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Resume/Contact</a></li>
+                    <li><a href="">Resume</a></li>
                 </ul>
             </nav>
             <main>
-                <img id="portrait" src="assets/images/portrait_.jpeg" alt="Portrait of Theodore Oliver">
+                <section id="portrait-section">
+                    <img id="portrait" src="assets/images/portrait_.jpeg" alt="Portrait of Theodore Oliver">
+                </section>
+                
                 <section id="about">
-                    <h2 class="subheader">About Theodore</h2>
+                    <h2 class="subheader">About Me</h2>
+                    <p class="info-text">Hello! My name is Theodore, but you may call me Teddy. I design websites and web applications with a focus on accesibility and creativity.</p>
+                    <p class="info-text">When I'm not coding, I enjoy playing guitar and hanging with my fiance and our two cats.</p>
+                </section>
+                <section id="projects">
+                    <h2 class="subheader">Projects</h2>
+                    <p class="info-text">Coming soon!</p>
                 </section>
             </main>
-        </div>    
+            
+        </div>
+        <div id="arrow-container">
+            <a id="arrow-link" href="#heading"><img id="up-arrow" src="assets/images/angle-circle-arrow-up-icon.png"></a>
+        </div>  
+          
         <footer>
-
+            <div id="footer-div">
+                <a href="https://github.com/Turtlewords" target="_blank"><img class="foot-img" src="assets/images/github-icon.png" alt="Github Logo that links to my github page"></a>
+                <a href="https://www.linkedin.com/in/theoliver8/" target="_blank"><img class="foot-img" src="assets/images/linkedin-square-icon.png" alt="LinkedIn logo that links to my LinkedIn"></a>
+                <a href="mailto:theoliver8@gmail.com" ><img class="foot-img" src="assets/images/envelope-icon.png" alt="Email icon that directs email to my account"></a>
+            </div>
+            <p>&copy; <span id="year">2024</span> Theodore Oliver</p>
         </footer>
     <script src="script.js"></script>
     </body>
