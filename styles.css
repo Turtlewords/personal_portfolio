@@ -1,5 +1,121 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'membraregular';
+    src: url('assets/fonts/membra-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'londrina_solidregular';
+    src: url('assets/fonts/LondrinaSolid-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Animation */
+
+@keyframes portrait-color {
+    from {border-color: #00F5D4;}
+  to {border-color: #FEE440;}
+}
+
+/* General Styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* Structure */
+
+body {
+    height: 100vh;
+    background: linear-gradient(#d397fa,  #8364e8);
+    font-family: 'londrina_solidregular', Tahoma, sans-serif;
+}
+
+header {
+    height: 17%;
+    text-align: center;
+}
+
+nav {
+    width: 20%;
+    border: 2px solid yellow;
+}
+
+#navbar {
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+main {
+    width: 83%;
+    border: 2px solid red;
+}
+
+
+
+/* Typography */
+
+h1 {
+    font-family: 'membraregular', Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 4.2rem;
+}
+
+#header-caption {
+    font-size: 1.6rem;
+}
+
+#content-container {
+    display: flex;
+    margin-top: 80px;
+}
+
+#navbar li {
+    list-style-type: none;
+}
+
+.subheader {
+    font-family: 'membraregular', Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+/* Links */
+
+#navbar a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #FFFCF7;
+}
+
+#navbar li {
+    margin-top: 20px;
+}
+
+#navbar a:hover {
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+/* Images */
+
+#portrait {
+    border-radius: 40%;
+    border: 5px solid #00F5D4;
+    width: 300px;
+    margin-left: 300px;
+    
+}
+
+#portrait:hover {
+    width: 315px;
+    animation: portrait-color 2.5s linear infinite;
+    
 }
