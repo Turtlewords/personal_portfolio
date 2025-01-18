@@ -71,6 +71,17 @@ main {
     margin: 3em 0;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #arrow-container {
     text-align: center;
     margin-top: 2.6em;
@@ -123,7 +134,7 @@ h1 {
     font-size: 1.8rem;
     max-width: 24em;
     min-width: 14em;
-    padding: 1.25em;
+    padding: .5rem;
     margin-left: 3.125em;
 }
 
@@ -185,6 +196,10 @@ footer p {
 .foot-img:hover {
     background-color: #FFFCF7;
     border: 2px solid #FFFCF7;
+}
+
+.project-img {
+    width: 24rem;
 }
 
 @media (max-width: 600px) {
